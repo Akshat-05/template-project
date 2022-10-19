@@ -1,8 +1,8 @@
 package com.templateproject.templateproject.service;
 
-import com.templateproject.templateproject.entity.UsersEntity;
+import com.templateproject.templateproject.entity.mysql.UsersEntity;
 import com.templateproject.templateproject.model.TemplateProjectResponse;
-import com.templateproject.templateproject.repository.UsersRepository;
+import com.templateproject.templateproject.repository.mysql.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

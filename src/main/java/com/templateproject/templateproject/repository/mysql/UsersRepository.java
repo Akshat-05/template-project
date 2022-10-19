@@ -1,6 +1,6 @@
-package com.templateproject.templateproject.repository;
+package com.templateproject.templateproject.repository.mysql;
 
-import com.templateproject.templateproject.entity.UsersEntity;
+import com.templateproject.templateproject.entity.mysql.UsersEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

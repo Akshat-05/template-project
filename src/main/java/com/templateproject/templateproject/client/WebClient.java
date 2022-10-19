@@ -22,7 +22,7 @@ public class WebClient {
         JSONObject object = null;
         try {
             Response response = client.newCall(req).execute();
-            if (response.code() == 200) {
+            if (response.isSuccessful()) {
                 object = new JSONObject(response.body().string());
             } else {
                 log.info("invalid response from {} API response {}, for request {}", api,

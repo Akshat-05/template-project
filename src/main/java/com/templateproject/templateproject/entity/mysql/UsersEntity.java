@@ -1,4 +1,4 @@
-package com.templateproject.templateproject.entity;
+package com.templateproject.templateproject.entity.mysql;
 
 import lombok.Data;
 
@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Data
 @Entity
@@ -30,5 +31,8 @@ public class UsersEntity {
 
     @Column(name = "verification_code")
     private String verificationCode;
+
+    @Transient
+    private String emailDomain;
 
 }

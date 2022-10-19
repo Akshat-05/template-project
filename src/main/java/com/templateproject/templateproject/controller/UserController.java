@@ -17,13 +17,13 @@ public class UserController {
     @Autowired
     UserManagementService service;
 
-    @GetMapping("/all")
+    @GetMapping("/allUser")
     public ResponseEntity<TemplateProjectResponse> getAllUsers() {
         return service.getAllUsers();
     }
 
     @GetMapping("/user")
-    public ResponseEntity<TemplateProjectResponse>  getUsers(@RequestParam Long id) {
+    public ResponseEntity<TemplateProjectResponse>  getUser(@RequestParam Long id) {
         return service.getUsers(id);
     }
 
